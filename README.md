@@ -31,7 +31,7 @@ Create a large image by reducing multiple images and arranging them in a grid.
 
 # Usage
 
-python3 tile_images.py output width heith column images
+python3 tile_images.py output width height column images
 
 - output : path for output image
 - width : width for output image

@@ -36,10 +36,8 @@ def create_tiled_image(output_path, width, height, columns, input_paths):
         except Exception as e:
             pass
 
-    # 出力画像当たりのグリッド数を計算
+    # 出力画像当たりのグリッド数を計算。はみ出さないように。
     rows = height // grid_height
-    if ((height % grid_height) != 0):
-        rows = rows + 1
     nimgs = columns * rows
 
     # 出来上がりのダミー画像を作成

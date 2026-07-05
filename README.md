@@ -50,11 +50,9 @@ python3 tile_images.py output width height column images
 
 ```output``` option is path for output image.
 
-'aa' means output image path is './aathumb_0001.jpg'
-
-'some_directory/bb' means output image path is 'some_directory/bbthumb_0001.jpg'
-
-'other_directory/' means output image path is 'other_directory/thumb_0001.jpg'
+- 'aa' means output image path is './aathumb_0001.jpg'
+- 'some_directory/bb' means output image path is 'some_directory/bbthumb_0001.jpg'
+- 'other_directory/' means output image path is 'other_directory/thumb_0001.jpg'
 
 # Example
 

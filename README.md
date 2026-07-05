@@ -28,6 +28,13 @@ Create a large image by reducing multiple images and arranging them in a grid.
 
 <img width="320" height="240" alt="Image" src="https://github.com/user-attachments/assets/9e4207b2-fad5-4752-8cd4-763dc265150f" />
 
+# Prepare
+
+Needs Python3 and PIL.
+
+```
+pip install pillow
+```
 
 # Usage
 
@@ -47,6 +54,8 @@ python3 tile_images.py output width height column images
 'some_directory/bb' means output image path is 'some_directory/bbthumb_0001.jpg'
 'other_directory/' means output image path is 'other_directory/thumb_0001.jpg'
 
+# Example
+
 ## Example1 : 4 columns, output file starts with 'aa' + 'thumb_'
 
 ```
@@ -57,7 +66,6 @@ $ ls
 aathumb_0001.jpg
 aathumb_0002.jpg
 aathumb_0003.jpg
-aathumb_0004.jpg
  ;
 ```
 
@@ -70,8 +78,6 @@ $ python3 tile_images.py output_dir/ 320 240 5 images/*
 $ ls
 output_dir/thumb_0001.jpg
 output_dir/thumb_0002.jpg
-output_dir/thumb_0003.jpg
-output_dir/thumb_0004.jpg
  ;
 ```
 
@@ -84,7 +90,17 @@ $ python3 tile_images.py output_dir/aa 320 240 6 images/*
 $ ls
 output_dir/aathumb_0001.jpg
 output_dir/aathumb_0002.jpg
-output_dir/aathumb_0003.jpg
-output_dir/aathumb_0004.jpg
+ ;
+```
+
+## Example4 : 7 columns, output file starts with './' + 'thumb_'
+
+```
+$ python3 tile_images.py ./ 320 240 7 images/*
+```
+```
+$ ls
+thumb_0001.jpg
+thumb_0002.jpg
  ;
 ```

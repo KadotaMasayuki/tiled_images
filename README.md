@@ -16,10 +16,10 @@ python3 tile_images.py output width heith column images
 - column : grid counted horizontally
 - images : path for input images
 
-## Example1
+## Example1 : 4 columns
 
 ```
-$ python3 tile_images.py aa 1600 1200 5 images/*
+$ python3 tile_images.py aa 320 240 4 images/*
 ```
 ```
 $ ls
@@ -30,10 +30,12 @@ aathumb_0004.jpg
  ;
 ```
 
-## Example2
+<img width="320" height="240" alt="Image" src="https://github.com/user-attachments/assets/9d8b0d7a-5275-477a-b28c-7050c0c5d1b4" />
+
+## Example2 : 5 columns
 
 ```
-$ python3 tile_images.py output_dir/ 1600 1200 5 images/*
+$ python3 tile_images.py output_dir/ 320 240 5 images/*
 ```
 ```
 $ ls
@@ -44,10 +46,12 @@ output_dir/thumb_0004.jpg
  ;
 ```
 
-## Example3
+<img width="320" height="240" alt="Image" src="https://github.com/user-attachments/assets/8ad5a792-f7ad-4014-af9d-8481aca3da7b" />
+
+## Example3 : 6 columns
 
 ```
-$ python3 tile_images.py output_dir/aa 1600 1200 5 images/*
+$ python3 tile_images.py output_dir/aa 320 240 6 images/*
 ```
 ```
 $ ls
@@ -58,3 +62,4 @@ output_dir/aathumb_0004.jpg
  ;
 ```
 
+<img width="320" height="240" alt="Image" src="https://github.com/user-attachments/assets/0a00e05f-bc59-4a7d-b9c1-ddb6a2b921c9" />
